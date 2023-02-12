@@ -1,11 +1,11 @@
 import React from 'react';
-import { Text, StyleSheet, View } from 'react-native';
+import { Text, StyleSheet, View, SafeAreaView } from 'react-native';
 
 const NavigateCard = () => {
   return (
-    <View>
+    <SafeAreaView>
       <Text>Yayyy</Text>
-    </View>
+    </SafeAreaView>
   )
 }
 
