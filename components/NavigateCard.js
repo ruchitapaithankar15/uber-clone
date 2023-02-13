@@ -6,6 +6,7 @@ import {GOOGLE_MAPS_APIKEY} from "@env";
 import { useDispatch } from 'react-redux';
 import { setDestination} from '../slices/navSlice';
 import { useNavigation } from '@react-navigation/native';
+import NavFavorites from './NavFavorites';
 
 
 const NavigateCard = () => {
@@ -39,6 +40,7 @@ const NavigateCard = () => {
             debounce={400}
             />
         </View>
+        <NavFavorites/>
       </View>
     </SafeAreaView>
   )
@@ -65,19 +67,3 @@ const toInputBoxStyles = StyleSheet.create({
 });
 
 
-// const toInputBoxStyles = StyleSheet.create({
-//     container:{
-//         backgroundColor: "white",
-//         paddingTop: 20,
-//         flex: 0
-//     },
-//     textInput:{
-//         backgroundColor:"DDDDDF",
-//         borderRadius: 0,
-//         fontSize:18,
-//     },
-//     textInputContainer:{
-//         paddingHorizontal: 20,
-//         paddingBottom: 0,
-//     },
-// });
