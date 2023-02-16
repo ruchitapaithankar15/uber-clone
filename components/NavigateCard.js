@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, StyleSheet, View, SafeAreaView } from 'react-native';
+import { Text, StyleSheet, View, SafeAreaView , TouchableOpacity} from 'react-native';
 import tw from 'tailwind-react-native-classnames';
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 import {GOOGLE_MAPS_APIKEY} from "@env";
@@ -7,7 +7,7 @@ import { useDispatch } from 'react-redux';
 import { setDestination} from '../slices/navSlice';
 import { useNavigation } from '@react-navigation/native';
 import NavFavorites from './NavFavorites';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+// import { TouchableOpacity } from 'react-native-gesture-handler';
 import { Icon } from 'react-native-elements';
 
 
